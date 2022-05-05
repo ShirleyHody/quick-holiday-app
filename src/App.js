@@ -73,9 +73,11 @@ const App = () => {
 
         <span>Weather destination generator</span>
       </div>
-      {content}
+      <div style={{ padding: '10px', marginTop: '25px', marginBottom: '25px', backgroundColor: 'rgb(233, 233, 233)'}}>
+        {content}
+      </div>
 
-      <Button block type='primary'  size="large" onClick={next} style={{ marginTop: '20px'}}>Next</Button>
+      <Button block type='primary'  size="large" onClick={next}>Next</Button>
     </div>
   );
 };
