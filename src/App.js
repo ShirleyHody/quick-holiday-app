@@ -6,29 +6,22 @@ import logo from './logo.png'
 const steps = [
   {
     key: 'temperature',
-    type: 'search',
-    content: 'TEMP',
   },
   {
     key: 'sun',
-    type: 'search',
-    content: 'sun',
   },
   {
     key: 'rain',
-    type: 'search',
-    content: 'TEMP',
   },
   {
     key: 'wind',
-    type: 'search',
-    content: 'wind',
   },
   {
     key: 'snow',
-    type: 'search',
-    content: 'snow',
-  }
+  },
+  {
+    key: 'results',
+  },
 ]
 
 const App = () => {
@@ -45,7 +38,7 @@ const App = () => {
       content = (
         <>
           <h3>Choose your temperature</h3>
-          <Slider  range min={0} max={40} />
+          <Slider range min={0} max={40} />
         </>
       )
       break;

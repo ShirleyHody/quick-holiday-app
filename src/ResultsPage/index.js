@@ -1,25 +1,29 @@
 import React from 'react'
-import ResultsList from './ResultsList'
 
+import { Image, Button } from 'antd'
+import { DownOutlined } from '@ant-design/icons'
 
-const data = [{
-  placeName: 'Stockholm',
-  image: 'https://picsum.photos/id/237/5000/5000',
-  description: 'some info about this place, blah blah blah blah blah blah blah blah',
-  sellingPoints: ['Landmarks', 'Food', 'Nightlife'],
-  weather: {
-    temperature: 20
-  },
-  flight: {
-    price: 25000
-  }
-}]
+import photo from '../lisbon.jpeg'
+import weather from '../weather.png'
+import flightDetails from '../flightDetails.png'
 
 const ResultsPage = () => {
   return (
     <>
-      <h1>Results</h1>
-      <ResultsList data={data} />
+    <div style={{ padding: '20px' }}>
+      <h1>Lisbon, Portugal</h1>
+      <Image src={photo} />
+      <Image src={weather} style={{ marginTop: '10px'}}/>
+      <Image src={flightDetails} />
+
+
+    </div>
+    <div style={{ textAlign: 'center', position: 'absolute', bottom: 0, width: '100%'}}>
+    <Button type="primary" size="large" block style={{marginBottom: '15px'}}>Book me</Button>
+    Show me another
+    <br />
+    <DownOutlined style={{ fontSize: '25px', fontWeight: 'bold'}}/>
+    </div>
     </>
   )
 }
