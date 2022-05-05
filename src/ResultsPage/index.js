@@ -8,6 +8,9 @@ import weather from '../weather.png'
 import flightDetails from '../flightDetails.png'
 
 const ResultsPage = () => {
+  const goToOtherPage = () => {
+    window.location = 'https://booking.flytap.com/booking/flights/deeplink?market=GB&origin=LHR&destination=L[…]utm_campaign=googleflights&language=EN&networkName=GOOGLEFS'
+  }
   return (
     <>
     <div style={{ padding: '20px' }}>
@@ -19,7 +22,7 @@ const ResultsPage = () => {
 
     </div>
     <div style={{ textAlign: 'center', position: 'absolute', bottom: 0, width: '100%'}}>
-    <Button type="primary" size="large" block style={{marginBottom: '15px'}}>Book me</Button>
+    <Button type="primary" size="large" block style={{marginBottom: '15px'}} onClick={goToOtherPage}>Book me</Button>
     Show me another
     <br />
     <DownOutlined style={{ fontSize: '25px', fontWeight: 'bold'}}/>
