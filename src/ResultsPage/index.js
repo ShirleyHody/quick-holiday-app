@@ -9,7 +9,7 @@ import flightDetails from '../flightDetails.png'
 
 const ResultsPage = () => {
   const goToOtherPage = () => {
-    window.location = 'https://booking.flytap.com/booking/flights/deeplink?market=GB&origin=LHR&destination=L[…]utm_campaign=googleflights&language=EN&networkName=GOOGLEFS'
+    window.location = 'https://booking.flytap.com/booking/flights/deeplink?market=GB&origin=LHR&destination=LIS&depDate=25.06.2022&flightType=return&retDate=27.06.2022&adt=1&chd=0&inf=0&utm_source=googleflights&utm_medium=metasearcher&utm_campaign=googleflights&language=EN&networkName=GOOGLEFS'
   }
   return (
     <>
